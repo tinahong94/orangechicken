@@ -1,0 +1,18 @@
+#Try Git Note#
+git init - initiate your git now
+git status - show you what the current state of the project is 
+git add <file name> - add the file to the staging area
+git commit -m "add xxxx" - To store our staged changes we run the commit command with a message describing what we've changed
+git w/ wildcard - git add '*.file name' (add all the new files using a wildcard with git add)
+git log - look at histroy about all the changes we have committed so far
+git remote add origin <URL> - push the local repo to the Github we will need to add a remote repository 
+git push -u origin master - the push command tells git where to put our commits when we are ready 
+-u: tells git to remember the parameters
+The default local branch name: master
+git pull origin master: pull down any new changes and check for changes on our github repository 
+git diff HEAD: what is different from our last commit 
+staged files: files we have told git that are ready to be committed 
+git reset: unstage files but the file will still be there; it's just not staged anymore
+git checkout - <tagret>: filed can be changed back to how they were at the last commit 
+branch: When developers are working on a feature or bug they'll often create a copy (aka. branch) of their code they can make separate commits to. Then when they're done they can merge this branch back into their main master branch.
+

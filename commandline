@@ -1,0 +1,51 @@
+command line
+Shell prompt $
+• It appears when the terminal is ready to accept a command
+ls (the command line looks at the folder you are in)
+	ls is an example of a command, a directive to the computer to perform a specific task
+	lists all files and directories in the working directory
+pwd outputs the name of the current working directory
+cd switches you into the directory you specify
+mkdir creates a new directory in the working directory
+touch creates a new file inside the working directory
+-a modifies the behavior of the ls command to also list the files and directories starting with a dot (.)
+-a is called an option. options modify the behavior of commands 
+ls -a to display the contents of the working directory in more detail 
+-a lists all contents, including hidden files and directories 
+-l lists all contents of a directory in long format
+-t order files and directories by the time they were last modified 
+ls -alt lists all contents, including hidden files and directories, in long format, ordered by the date and time they were last modified 
+cp copies files or directories
+* selects all files in the working directory
+eg: m*.txt selects all files in the working directory starting with "m" and ending with ".txt" 
+mv moves and renames files 
+mv superman.txt superhero/ (we move superman.txt to superhero/)
+rm removes files
+rm - r removes directories 
+cat commands outputs the contents of a file to the terminal
+> takes the standard output of the command on the left, and redirects it to the file on the right 
+	> it overwrites all original content 
+>> takes the standard output of the command on the left and appeneds (adds) it to the file on the right 
+< takes the standard input from the file on the right and inputs it into the program on the left
+|("pipe") takes the standard output of the command on the left, and pipes it as standard input to the command on the right 
+	"command to command redirection"
+sort takes the standard input and orders it alphabetically for the standard output 
+uniq stands for "unique" and filters out adjacent, duplicate lines in a file 
+grep stands for "global regular expression print"
+	it searches files for lines that match a pattern and returns the results and it is also case sensitive 
+grep -i enables the command to be case insensitive 
+grep -R searches all files in a directory and outputs filenames and lines containing matched results 
+	-R stands for "recursive" 
+	grep -R Arctic /home/ccuser/workspace/geography 
+		searches the /home/ccuser/workspace/geography directory for the string "Arctic" and outputs filenames and lines with matched results 
+grep -Rl searches all files in a directory and outputs only filesnames with matched results 
+	-R stands for "recursive" 
+	l stands for "files with matches"
+sed stands for "stream editor"
+	it accepts input and modifies it based on an expression, before displaying it as output data (similar to "find and replace")
+s: stands for "substituiton" (always used when using sed for substituiton)
+sed 's/snow/rain/g' forests.txt
+	uses the g expression, meaning "global"
+	sed searches forests.txt for the word "snow" and replaces with "rain", globally 
+	all instanes of "snow" on a line will be turned to "rain"
+	
