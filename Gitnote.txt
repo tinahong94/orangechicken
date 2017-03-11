@@ -1,6 +1,5 @@
-#Try Git Note#
 git init - initiate your git now
-git status - show you what the current state of the project is 
+git status - show you what the current state of the project is (shortcut:gst)
 git add <file name> - add the file to the staging area
 git commit -m "add xxxx" - To store our staged changes we run the commit command with a message describing what we've changed
 git w/ wildcard - git add '*.file name' (add all the new files using a wildcard with git add)
@@ -15,4 +14,5 @@ staged files: files we have told git that are ready to be committed
 git reset: unstage files but the file will still be there; it's just not staged anymore
 git checkout - <tagret>: filed can be changed back to how they were at the last commit 
 branch: When developers are working on a feature or bug they'll often create a copy (aka. branch) of their code they can make separate commits to. Then when they're done they can merge this branch back into their main master branch.
-
+git push origin master: push the origin master branch 
+git add ./: git add all the files within one directory 
